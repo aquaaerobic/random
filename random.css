@@ -75,7 +75,7 @@
 
                   /* Style inputs with type="text", select elements and textareas */
                   input[type=number] {
-                  background-color: rgb(8,13,32);
+                  background-color: rgb(0, 191, 255);
                   padding: 12px; /* Some padding */
                   color: lightgreen;
                   font-size: 24px;
@@ -89,7 +89,7 @@
 
 
                   button {
-                  background-color: lightgreen;
+                  background-color: lightblue;
                   color: black;
                   padding: 12px 20px;
                   border: none;
@@ -106,6 +106,6 @@
                   }
 
                   .green {
-                  color: lightgreen;
+                  color: lightblue;
                   font-size: 56px;
                   }
