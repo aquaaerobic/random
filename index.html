@@ -13,6 +13,13 @@
   function maxFunction() { 
             document.getElementById("max_value").focus(); 
         } 
+  $('input').keypress(function(e) {
+    if (e.which == 13) {
+        $(this).next('input').focus();
+        e.preventDefault();
+    }
+});
+
     </script> 
                   </head>
                   <body>
