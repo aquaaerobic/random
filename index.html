@@ -13,13 +13,16 @@
   function maxFunction() { 
             document.getElementById("max_value").focus(); 
         } 
+        
     </script> 
                   </head>
                   <body>
-                      <script>
-                         var sound = new Audio();
-                         sound.src = 'chime.mp3';
-                       </script>
+                    <audio id="myAudio" src="startup.mp3"></audio>
+                    <script>
+                        window.onload = function() {
+                            document.getElementById("myAudio").play();
+                        };
+                    </script>
                   <div class="row">
                   <div class="col-2"></div>
                   <div class="col-8" align="center">
@@ -75,10 +78,10 @@ input2.addEventListener("keypress", function(event) {
                   document.getElementById("reset").style.padding = "10px 10px 10px 10px";
                   }
 
-                  document.getElementById("myBut").addEventListener("click", generate);
-                  document.getElementById("reset").style.display = 'none';
-                  //max-height: 0;
+                 
 
+                  document.getElementById("myBut").addEventListener("click", generate);
+                  document.getElementById("reset").style.display = 'none';   
                   </script>
                   </body>
                   </html>
