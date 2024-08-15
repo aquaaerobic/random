@@ -5,7 +5,7 @@
                     <meta charset="UTF-8">
                     <title>Aqua Random Number Generator</title>
                     <link rel="stylesheet" type="text/css" href="random.css">
-                    <meta name="description" content="Use Vanilla JavaScript to generator a number in a given range!">
+                    <meta name="description" content="generate number in a given range!">
 <script type="text/javascript"> 
         function minFunction() { 
             document.getElementById("min_value").focus(); 
@@ -14,16 +14,24 @@
             document.getElementById("max_value").focus(); 
         } 
     </script> 
-
+<style>
+  footer {
+    text-align: center;
+    padding: 0px;
+    color: white;
+    font-size: 16px;
+  }
+  </style>
                   </head>
                   <body>
                   <div class="row">
                   <div class="col-2"></div>
                   <div class="col-8" align="center">
+                    <img src="https://aqua-aerobic.com/wp-content/uploads/2024/02/aqua-aerobics-logo-55.jpg" width="350px" >
                   <h1>Aqua Random Number Generator</h1>
                   <div class="myform">
                     <button onclick="window.location.href=window.location.href" id="reset" style="font-size: 16px;background-color: rgb(216, 0, 0);display: block;padding: 10px;margin-bottom: 20px;">Start Over!</button>
-                 1) Enter MIN value then [Enter] key&nbsp;&nbsp;<br> 2) Enter MAX Value then [Enter] key<br>3) View random number below **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font size="3" style="color: chartreuse;">** Press [Enter] again or click [Generate] button to generate new number</font> <br><br>
+                 1) Enter MIN value then [Enter] key&nbsp;&nbsp;<br> 2) Enter MAX Value then [Enter] key<br>3) View random number below **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font size="3" style="color: rgb(194, 197, 197);">** Press [Enter] again or click [Generate] button to generate new number</font> <br><br>
                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                     <input type="number" id="min_value" onmousemove=minFunction() placeholder="Enter Min Value" autofocus><br>
                   <input type="number" id="max_value" onmousemove=maxFunction() placeholder="Enter Max Value">
@@ -74,5 +82,10 @@ input2.addEventListener("keypress", function(event) {
                   document.getElementById("myBut").addEventListener("click", generate);
                   document.getElementById("reset").style.display = 'none';   
                   </script>
+                  <footer>
+                    <p>Copyright © 2024 - All Rights Reserved - Aqua-Aerobic System, Inc<br>
+                    <a href="mailto:ckonkol@aqua-aerobic.com" style="color: white;">created by Chuck Konkol</a></p>
+                  </footer>
                   </body>
                   </html>
+
