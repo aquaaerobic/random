@@ -14,6 +14,7 @@
             document.getElementById("max_value").focus(); 
         } 
     </script> 
+
                   </head>
                   <body>
                   <div class="row">
@@ -22,7 +23,7 @@
                   <h1>Aqua Random Number Generator</h1>
                   <div class="myform">
                     <button onclick="window.location.href=window.location.href" id="reset" style="font-size: 16px;background-color: rgb(216, 0, 0);display: block;padding: 10px;margin-bottom: 20px;">Start Over!</button>
-                 Enter MIN & MAX Values <br><br>
+                 1) Enter MIN value [Enter]&nbsp;&nbsp;<br> 2) Enter MAX Value [Enter]<br>3) View Random Number**<br><font size="3" style="color: chartreuse;">** Press [Enter] again or click [Generate] button to generate new number</font> <br><br>
                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                     <input type="number" id="min_value" onmousemove=minFunction() placeholder="Enter Min Value" autofocus><br>
                   <input type="number" id="max_value" onmousemove=maxFunction() placeholder="Enter Max Value">
@@ -45,7 +46,7 @@ input2.addEventListener("keypress", function(event) {
 
                     <br>
                   <br>
-                  <button id="myBut" onclick="generate()">Generate!</button><br><br>
+                  <button id="myBut" onclick="generate()" title="Click to Generate Random Number">Generate!</button><br><br>
                  
                   <div class="green" id="output"> </div>
                   </div>
